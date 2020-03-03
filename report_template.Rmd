@@ -1,0 +1,39 @@
+---
+title: "your name"
+author: Progress report
+header-includes:
+  \renewcommand{\contentsname}{}
+output:
+  pdf_document:
+    fig_caption: no
+    toc: FALSE
+    toc_depth: 3
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+### Thesis title
+Restate purpose and goals.  
+Remind committee on thesis structure.  
+End with a statement about progress to date.  
+
+### List of achievements  
+```{r summary, message=FALSE, warning=FALSE}
+library(tidyverse)
+summary <- read_csv("data/summary.csv")
+knitr::kable(summary)
+```
+
+
+\newpage
+### Proposed goals
+List and describe proposed tasks moving forward.
+
+### Key questions  
+List key questions that you would like input on.  
+
+### Chapter updates
+State details on 1-2 chapters that you seek input.
