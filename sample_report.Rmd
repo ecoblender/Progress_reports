@@ -1,0 +1,52 @@
+---
+title: "Christopher j. Lortie"
+author: Progress report
+header-includes:
+  \renewcommand{\contentsname}{}
+output:
+  pdf_document:
+    fig_caption: no
+    toc: FALSE
+    toc_depth: 3
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+### The relative importance of diversity at scale for direct restoration in drylands.
+Several ongoing research topics needed to be addressed in the last 6 months. However, I am keen to now move forward and examine the relevance of diversity of plants and animals at different scales relevant to direct restoration efforts.  
+
+### List of achievements  
+```{r summary, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(kableExtra)
+summary <- read_csv("data/sample_summary.csv")
+knitr::kable(summary) %>%
+  column_spec(1, width = "1cm") %>%
+  column_spec(2:3, width = "4cm") %>%
+kable_styling(latex_options = c("hold_position", "repeat_header"))
+```
+
+
+\newpage
+### Proposed goals
+1. Plan sampling at least two sites in California at different scales.  
+2. Support floral diversity sampling for two projects.    
+3. Write up Cuyama Micronet paper.  
+4. Get RestoreNet setup.  
+5. Complete RDM paper.  
+6.  Complete step 1 of invert synthesis.  
+7. Do meta on tipping points.  
+8. Do meta on ecotypes.  
+
+### Key questions  
+1. How late is too late to set up Restorenet?
+2. When is the best time to sample for diversity at scale?  
+3. What is a good simple, back-up sampling project for diversity and restoration?   
+4. How to time invert synthesis?  
+5. When to fit in RDM paper?  
+
+### Chapter updates
+State details on 1-2 chapters that you seek input.
